@@ -1,0 +1,51 @@
+html{
+    margin: 0 !important;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    background-color: rgb(24, 112, 24);
+    color: white;
+    box-shadow: 0 3px 5px black;
+    margin-bottom: 50px;
+}
+
+header .logonome{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-around;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+header nav ul li{
+    font-size: 25px;
+    padding: 40px;
+    margin: 10px;
+}
+
+header nav ul li:hover{
+    background-color: rgb(113, 173, 113);
+    color: black;
+}
+
+
+
+
+
+
+
