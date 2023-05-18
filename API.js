@@ -20,7 +20,7 @@ $('#buscainfo').on('click', function(e) {
             document.getElementById("pot").innerHTML = comida[0]['potassium_mg']+" mg";
             document.getElementById("prot").innerHTML =   comida[0]['protein_g']+" g";
             document.getElementById("serve").innerHTML = comida[0]['serving_size_g']+" g";
-            document.getElementById("sóÓdio").innerHTML = comida[0]['sodium_mg']+" mg";
+            document.getElementById("sódio").innerHTML = comida[0]['sodium_mg']+" mg";
             document.getElementById("doce").innerHTML = comida[0]['sugar_g']+" g";
         },
         error: function ajaxError(jqXHR) {
@@ -62,3 +62,4 @@ $('#buscareceita').on('click', function(e) {
     });
    
 });
+

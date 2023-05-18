@@ -1,6 +1,12 @@
 html{
     margin: 0 !important;
 }
+
+body{
+    background-image: url(Imagens/desfocada\ 2.jpg);
+    background-size: cover;
+    
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -38,9 +44,52 @@ header nav ul li{
     margin: 10px;
 }
 
+header nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
 header nav ul li:hover{
     background-color: rgb(113, 173, 113);
     color: black;
+}
+
+content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+content .fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 1100px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 7px black;
+}
+
+content .formu{
+    width: 600px;
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+content .tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    margin: 30px;
+}
+
+content .tabela #receita{
+    width: 600px;
+    text-align: justify;
 }
 
 

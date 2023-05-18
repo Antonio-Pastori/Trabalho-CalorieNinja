@@ -9,11 +9,6 @@
     <title>Nutrilife</title>
     
 </head>
-    <style>
-    table, th, td {
-      border:1px solid black;
-    }
-    </style>
 <body>
     <header>
         <div class="logonome">
@@ -22,52 +17,55 @@
         </div>
         <nav>
             <ul>
-                <li class="menu">Text</li>
-                <li class="menu">Image</li>
-                <li class="menu">Recipe</li>
+                <a href="home.html"><li class="menu">Text</li></a>
+                <a href=""><li class="menu">Image</li></a>
+                <a href="Recipe.html"><li class="menu">Recipe</li></a>
             </ul>
         </nav>
 
     </header>
-    <h2>Choose a food to search:</h2>
-
-   
-        <input id="ing" value="">
-        <button id="buscainfo">Search</button>
-        <div>
-            <table>
-                <tr><th>Food Information</th></tr>
-                <tr><td><p>Name</p></td><td><p id="nomeing"></p></td></tr> 
-                <tr><td><p>Calories</p></td><td><p id="calories"></p></td></tr>
-                <tr><td><p>Carbohydrates</p></td><td><p id="carbot"></p></td></tr>
-                <tr><td><p>Cholesterol</p></td><td><p id="coles"></p></td></tr>
-                <tr><td><p>Saturated Fat</p></td><td><p id="gords"></p></td></tr>
-                <tr><td><p>Total Fat</p></td><td><p id="gordt"></p></td></tr>
-                <tr><td><p>Fiber</p></td><td><p id="fibra"></p></td></tr>
-                <tr><td><p>Potassium</p></td><td><p id="pot"></p></td></tr>
-                <tr><td><p>Protein</p></td><td><p id="prot"></p></td></tr>
-                <tr><td><p>Serving Size</p></td><td><p id="serve"></p></td></tr>
-                <tr><td><p>Sodium</p></td><td><p id="sóÓdio"></p></td></tr>
-                <tr><td><p>Sugar</p></td><td><p id="doce"></p></td></tr>
-            </table>
-        </div>
-        <br><br>
-        <div class="api-block">
-            <div>
-               <h5 style="display:inline;">Want a recipe?</h5>
+    <content>
+        <div class="fundo">
+            <h2>Choose a food to search:</h2>
+            <div class="formu">
+                <input id="ing" class="form-control" placeholder="">
+                <button id="buscainfo" class="btn btn-dark">Search</button>
             </div>
-            <input id="textoreceita" value="Put your ingredient here"></code>
-            <button id="buscareceita">Search</button>
-            <table>
-                <tr><th id="titulo"></th></tr>
-                <tr><td><p id="ingrecipe"></p></td></tr>
-                <tr><td><p id="instrecipe"></p></td></tr>
-                <tr><td><p id="serverecipe"></p></td></tr> 
-            </table>
+            <h2>Food Information</h2>
+            <div class="tabela">
+                <table class="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Calories</th>
+                        <th>Carbohydrates</th>
+                        <th>Cholesterol</th>
+                        <th>Saturated Fat</th>
+                        <th>Total Fat</th>
+                        <th>Fiber</th>
+                        <th>Potassium</th>
+                        <th>Protein</th>
+                        <th>Serving</th>
+                        <th>Sodium</th>
+                        <th>Sugar</th>
+                    </tr>
+                    <tr>
+                        <td><p id="nomeing"></p></td>
+                        <td><p id="calories"></p></td>
+                        <td><p id="carbot"></p></td>
+                        <td><p id="coles"></p></td>
+                        <td><p id="gords"></p></td>
+                        <td><p id="gordt"></p></td>
+                        <td><p id="fibra"></p></td>
+                        <td><p id="pot"></p></td>
+                        <td><p id="prot"></p></td>
+                        <td><p id="serve"></p></td>
+                        <td><p id="sódio"></p></td>
+                        <td><p id="doce"></p></td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        
-
-       
+    </content>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script src="API.js"></script>
 </body>
