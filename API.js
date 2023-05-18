@@ -62,7 +62,15 @@ $('#buscareceita').on('click', function(e) {
     
     $.ajax(settings).done(function (response) {
         console.log(response);
-        
+        receita = response[0];
+        titulo = receita['title'];
+        document.getElementById("titulo").innerHTML = titulo;
+        inst = receita['instructions'];
+        document.getElementById("instrecipe").innerHTML = "Instructions:"+"<br>"+inst;
+        ingred = receita['ingredients'];
+        document.getElementById("ingrecipe").innerHTML = "Ingredients: <br>"+ingred;
+        porcao = receita['servings'];
+        document.getElementById("serverecipe").innerHTML = "Servings: <br>"+porcao;
     });
    
 });
