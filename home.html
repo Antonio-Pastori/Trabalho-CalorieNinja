@@ -7,7 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" type="Text/css" href="Master.CSS">
     <title>Nutrilife</title>
+    
 </head>
+    <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
 <body>
     <header>
         <div class="logonome">
@@ -23,18 +29,124 @@
         </nav>
 
     </header>
-    
     <h2>Informe o nome do alimento:</h2>
 
    
-        <input id="sample-api-request" class="api-example-query" value="">
-        <button id="submitSampleAPIRequest" class="btn btn-sm btn-primary">Enviar</button>
+        <input id="ing" value="">
+        <button id="buscainfo">Enviar</button>
+        <div>
+            <table>
+                <tr>
+                    <th>informações do ingrediente</th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>ingrediente</p>
+                    </td>
+                    <td><p id="nomeing"></p></td>
+                </tr> 
+                <tr>
+                    <td>
+                        <p>Calorias</p>
+                    </td>
+                    <td>
+                        <p id="calories"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Carboidratos Totais (gramas)</p>
+                    </td>
+                    <td>
+                        <p id="carbot"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p >Colesterol (mg)</p>
+                    </td>
+                    <td>
+                        <p id="coles"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Gordura Saturada (g)</p>
+                    </td>
+                    <td>
+                        <p id="gords"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p >Gordura Total (g)</p>
+                    </td>
+                    <td>
+                        <p id="gordt"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Fibras (g)</p>
+                    </td>
+                    <td>
+                        <p id="fibra"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p >Potássio (mg)</p>
+                    </td>
+                    <td>
+                        <p id="pot"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p >Proteínas (g)</p>
+                    </td>
+                    <td>
+                        <p id="prot"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p >Quantidade Servida (g)</p>
+                    </td>
+                    <td>
+                        <p id="serve"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p >Sódio (mg)</p>
+                    </td>
+                    <td>
+                        <p id="sóÓdio"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Açúcar (g)</p>
+                    </td>
+                    <td>
+                        <p id="doce"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
+        <div class="api-block">
+            <div>
+               <h5 style="display:inline;">Vamos procurar uma receita?</h5>
+            </div>
+            <input id="textoreceita" value="coloque seu ingrediente aqui"></code>
+            <button id="buscareceita">Enviar</button>
+        </div>
+        
 
-    
+       
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script function BuscaFodd(){
-        src="API.js"
-    }></script>
-    
+    <script src="API.js"></script>
 </body>
 </html>
