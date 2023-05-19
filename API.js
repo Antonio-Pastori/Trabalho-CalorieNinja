@@ -89,5 +89,6 @@ $('#buscaimagem').on('click', function(e) {
         error: function ajaxError(jqXHR, textStatus, errorThrown) {
             alert(jqXHR.responseText);
         }
+        
     });
 });
