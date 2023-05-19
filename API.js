@@ -18,7 +18,7 @@ $('#buscainfo').on('click', function(e) {
             document.getElementById("gordt").innerHTML = comida[0]['fat_total_g']+" g";
             document.getElementById("fibra").innerHTML = comida[0]['fiber_g']+" g";
             document.getElementById("pot").innerHTML = comida[0]['potassium_mg']+" mg";
-            document.getElementById("prot").innerHTML =   comida[0]['protein_g']+" g";
+            document.getElementById("prot").innerHTML = comida[0]['protein_g']+" g";
             document.getElementById("serve").innerHTML = comida[0]['serving_size_g']+" g";
             document.getElementById("sódio").innerHTML = comida[0]['sodium_mg']+" mg";
             document.getElementById("doce").innerHTML = comida[0]['sugar_g']+" g";
